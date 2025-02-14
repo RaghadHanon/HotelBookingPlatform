@@ -1,0 +1,58 @@
+﻿namespace HotelBookingPlatform.Application.Utilities.ErrorMessages;
+
+public class ValidationErrorMessages
+{
+    public const string RequiredField = "'{PropertyName}' is required.";
+    public const string InvalidNameCharacters = "'{PropertyName}' should only contain letters.";
+    public const string InvalidNameLength = "'{PropertyName}' must be between {MinLength} and {MaxLength} characters.";
+    public const string InvalidNumericStringLength = "'{PropertyName}' must be exactly {Length}-digits.";
+    public const string PasswordTooShort = "Password must be at least {MinLength} characters.";
+    public const string PasswordMissingUppercase = "Password must include UPPERCASE letters.";
+    public const string PasswordMissingLowercase = "Password must include lowercase letters.";
+    public const string PasswordMissingDigits = "Password must include digits.";
+    public const string PasswordMissingSpecialCharacter = "Password must include special characters.";
+    public const string InvalidCitySortColumn = "Sort column must be empty or 'CreationDate', 'LastModified', 'Name', 'Country', 'PostOffice', or 'Hotels'.";
+    public const string InvalidHotelSortColumn = "Sort column must be empty or 'id' or 'creationDate' or 'lastModified' or 'name' or 'owner' or 'starRate' or 'roomsNumber'.";
+    public const string InvalidFilterHotelSortColumn = "Sort column must be empty or 'id' or 'name' or 'rating' or 'price' or 'starRate'.";
+    public const string InvalidReviewSortColumn = "Sort column must be either 'id' or 'creationDate' or 'lastModified' or 'rating'";
+    public const string InvalidRoomSortColumn = "Sort column must be empty or 'id' or 'creationDate' or 'lastModified' or 'roomNumber' or 'adultsCapacity' or 'childrenCapacity' or 'hotelName'.";
+    public const string InvalidBookingSortColumn = "Sort column must be empty or 'id' or 'CheckInDate' or 'CheckOutDate' or 'Price' or 'NumberOfAdults' or 'NumberOfChildren'.";
+    public const string InvalidAmenitySortColumn = "Sort column must be empty or 'id' or 'Name' or 'Description'.";
+    public const string InvalidDiscountSortColumn = "Sort column must be empty or 'id' or 'Percentage' or 'StartDate' or 'EndDate' or 'OriginalPrice' or 'DiscountedPrice'.";
+    public const string RoomIdsRequired = "Room IDs are required.";
+    public const string InvalidNumberOfAdults = "The number of adults must be between {MinRoomCapacity} and {MaxRoomCapacity}.";
+    public const string InvalidNumberOfChildren = "The number of children must be between {MinRoomCapacity} and {MaxRoomCapacity}.";
+    public const string CheckInDateRequired = "Check-in date is required.";
+    public const string CheckInDateMustBeFuture = "Check-in date must be in the future.";
+    public const string CheckOutDateRequired = "Check-out date is required.";
+    public const string CheckOutDateAfterCheckIn = "Check-out date must be after check-in date.";
+    public const string PageNumberInvalid = "Page number must be greater than or equal to 1.";
+    public const string PageSizeInvalid = "Page size must be greater than or equal to 1.";
+    public const string InvalidSortOrder = "Sort order must be empty or 'asc' or 'desc'.";
+    public const string SearchTermTooLong = "Search term must be empty or less than or equal to 100 characters.";
+    public const string StartDateMustBeFuture = "Start date must be greater than current date.";
+    public const string EndDateMustBeAfterStartDate = "End date must be greater than start date.";
+    public const string PercentageRange = "Percentage must be between 1 and 100.";
+    public const string DiscountedPriceGreaterThanZero = "Discounted price must be greater than 0.";
+    public const string MustSupplyPercentageOrDiscountedPrice = "Must supply either percentage or discounted price.";
+    public const string CheckInDateInvalid = "Check-in date must be greater than or equal to today's date.";
+    public const string CheckOutDateInvalid = "Check-out date must be greater than or equal to check-in date.";
+    public const string AdultsInvalid = "Adults must be greater than or equal to 1.";
+    public const string ChildrenInvalid = "Children must be greater than or equal to 0.";
+    public const string RoomsInvalid = "Rooms must be greater than or equal to 1.";
+    public const string MinStarRatingInvalid = "Min star rating must be between 1 and 5.";
+    public const string MinPriceInvalid = "Min price must be greater than or equal to 0.";
+    public const string MaxPriceInvalid = "Max price must be greater than or equal to 0.";
+    public const string MaxPriceLessThanMinPrice = "Max price must be greater than or equal to min price.";
+    public const string AmenityInvalid = "Each provided amenity must be between 1 and 100 characters.";
+    public const string RoomTypeInvalid = "Provided room type is not valid.";
+    public const string EmailRequired = "Email is required.";
+    public const string EmailInvalid = "Email is not valid.";
+    public const string UsernameRequired = "Username is required.";
+    public const string UsernameTooShort = "Username must be at least 5 characters long.";
+    public const string UsernameTooLong = "Username must not be longer than 30 characters.";
+    public const string RatingInvalid = "Rating must be between {MinRating} and {MaxRating}.";
+    public const string TitleInvalidLength = "Title must be between {MinReviewTitleLength} and {MaxReviewTitleLength} characters long.";
+    public const string DescriptionInvalidLength = "Description must be between {MinReviewDescriptionLength} and {MaxReviewDescriptionLength} characters long.";
+    public const string ProvidedRoomTypeNotValid = "Provided RoomType is not valid";
+}
